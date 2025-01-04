@@ -23,6 +23,7 @@ local Options = {};
 getgenv().Toggles = Toggles;
 getgenv().Options = Options;
 
+print("бака")
 local Library = {
     Registry = {};
     RegistryMap = {};
@@ -37,7 +38,6 @@ local Library = {
     RiskColor = Color3.fromRGB(255, 50, 50),
 
     Black = Color3.new(0, 0, 0);
-    print("бака")
     Font = Enum.Font.Arcade,
 
     OpenedFrames = {};
