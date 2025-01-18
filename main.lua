@@ -2947,8 +2947,10 @@ function Library:CreateWindow(...)
     if type(Config.TabPadding) ~= 'number' then Config.TabPadding = 0 end
     if type(Config.MenuFadeTime) ~= 'number' then Config.MenuFadeTime = 0.2 end
 
-    if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(175, 50) end
+    if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(327, 94) end
     if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset( 902, 750) end
+    if typeof(Config.PositionSideBar) ~= 'UDim2' then Config.PositionSideBar = UDim2.fromOffset(180, 94) end
+    if typeof(Config.SizeSideBar) ~= 'Udim2' then Config.SizeSideBar = Udim2.fromOffset(178, 750) end
 
     if Config.Center then
         Config.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -2974,8 +2976,8 @@ function Library:CreateWindow(...)
         AnchorPoint = Config.AnchorPoint,
         BackgroundColor3 = Color3.new(0, 0, 0);
         BorderSizePixel = 0;
-        Position = Config.Position / 2,
-        Size = Config.Size / 2,
+        Position = Config.PositionSideBar,
+        Size = Config.SizeSideBar,
         Visible = false;
         ZIndex = 1;
         Parent = ScreenGui;
