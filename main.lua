@@ -2950,7 +2950,7 @@ function Library:CreateWindow(...)
     if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(327, 94) end
     if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset( 902, 750) end
     if typeof(Config.PositionSideBar) ~= 'UDim2' then Config.PositionSideBar = UDim2.fromOffset(180, 94) end
-    if typeof(Config.SizeSideBar) ~= 'Udim2' then Config.SizeSideBar = Udim2.fromOffset(178, 750) end
+    if typeof(Config.SizeSideBar) ~= 'Udim2' then Config.SizeSideBar = UDim2.fromOffset(178, 750) end
 
     if Config.Center then
         Config.AnchorPoint = Vector2.new(0.5, 0.5)
