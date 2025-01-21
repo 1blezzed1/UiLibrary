@@ -2974,6 +2974,7 @@ function Library:CreateWindow(...)
     Library:MakeDraggable(Outer, 25);
     
     local Inner = Library:Create('ImageLabel', {
+        Image = 'http://www.roblox.com/asset/?id=4280422108';
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.AccentColor;
         BorderMode = Enum.BorderMode.Inset;
