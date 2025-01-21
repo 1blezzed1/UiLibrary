@@ -37,7 +37,7 @@ local Library = {
     RiskColor = Color3.fromRGB(255, 50, 50),
 
     Black = Color3.new(0, 0, 0);
-    Font = Enum.Font.Code,
+    Font = Enum.Font.Monospace,
 
     OpenedFrames = {};
     DependencyBoxes = {};
@@ -2973,8 +2973,7 @@ function Library:CreateWindow(...)
 
     Library:MakeDraggable(Outer, 25);
     
-    local Inner = Library:Create('ImageLabel', {
-        Image = 'http://www.roblox.com/asset/?id=4280422108';
+    local Inner = Library:Create('Frame', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.AccentColor;
         BorderMode = Enum.BorderMode.Inset;
