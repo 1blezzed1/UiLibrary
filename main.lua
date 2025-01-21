@@ -2760,8 +2760,7 @@ do
 
 
 
-    local KeybindOuter = Library:Create('ImageLabel', {
-        Image = 'http://www.roblox.com/asset/?id=139835207386022';
+    local KeybindOuter = Library:Create('Frame', {
         AnchorPoint = Vector2.new(0, 0.5);
         BorderColor3 = Color3.new(0, 0, 0);
         Position = UDim2.new(0, 10, 0.5, 0);
