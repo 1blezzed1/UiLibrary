@@ -1281,7 +1281,8 @@ do
             end;
         end);
 
-        Library:GiveSignal(InputService.InputBegan:Connect(function(Input)
+        Library:GiveSignal(InputService.InputBegan:Connect(function(Input, IsTyping)
+            if IsTyping then return end
             if (not Picking) then
                 if KeyPicker.Mode == 'Toggle' then
                     local Key = KeyPicker.Value;
@@ -2972,7 +2973,7 @@ function Library:CreateWindow(...)
 
     Library:MakeDraggable(Outer, 25);
     
-    local Inner = Library:Create('Frame', {
+    local Inner = Library:Create('ImageLabel', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.AccentColor;
         BorderMode = Enum.BorderMode.Inset;
